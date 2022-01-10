@@ -15,7 +15,7 @@
         <section class='main-nav' id='sectionMainMenu'>
             <h1 class="show-for-sr">Main Navigation</h1>
             <div class="main-menu-nav">
-                <section class="global-nav">
+                <section class="global-nav desktop-only">
                     <div class='grid-row'>
                         <div class="grid-sm-1">
                             <h1 class="show-for-sr">Static page navigation</h1>
@@ -28,38 +28,36 @@
                     </div>
                 </section>
                 <nav class="grid-row">
-                    <div class="grid-md-1-2">
+                    <div class="grid-md-1-2 grid-sm-1-2">
                         <a href="#" class='logo'><span class="show-for-sr">RDG logo</span></a>
                     </div>
-                    <div class="grid-sm-1-2 grid-md-1-6 account-nav">
-                        <h3>
-                            <a href="#">
-                                <span class="desktop-only" aria-hidden="true"></span>
-                                Reviewer Home
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="grid-sm-1-2 grid-md-1-6 account-nav">
-                        <h3>
-                            <a href="#">
-                                <span class="desktop-only" aria-hidden="true"></span>
-                                Ingest Home
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="grid-sm-1-2 grid-md-1-6 account-nav">
-                        <h3>
-                            <a href="#">
-                                <span class="desktop-only" aria-hidden="true"></span>
-                                Log In
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="grid-sm-1-2 nav-tile mobile-only">
-                        <a id="aMenuMore">
-                            <span class="fas fa-bars" aria-hidden="true"></span>
-                            More
+                    <div class="grid-md-1-2 nav-tile desktop-only">
+                        <a href="#">
+                            <span aria-hidden="true"></span>
+                            Reviewer Home
                         </a>
+                        <a href="#">
+                            <span aria-hidden="true"></span>
+                            Ingest Home
+                        </a>
+                        <a href="#">
+                            <span aria-hidden="true"></span>
+                            Log Out
+                        </a>
+                    </div>
+                    <div class="grid-sm-1-2 mobile-only">
+                        <ul role='menu' class="grid-sm-1 nav-tile">
+                            <input type="checkbox" id="checkbox-toggle" />
+                            <label for="checkbox-toggle" class='hamburger'>
+                                <span class="fas fa-bars" aria-hidden="true"></span>
+                            </label>
+                            <div class="grid-sm-1 mobile-menu">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">My Account</a></li>
+                            </div>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -268,7 +266,6 @@
             </div>
             <div class="grid-centered primary-color--50">
                 Centered Grid
-            </div>
             </div>
             <div class='grid-md-1'></div>
         </section>
