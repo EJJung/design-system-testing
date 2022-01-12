@@ -270,6 +270,45 @@
             <div class='grid-md-1'></div>
         </section>
 
+        <section class="hero">
+            <div class="grid-row text-center">
+                <div class='grid-md-1'>
+                    <h2>Find and Apply to use restricted data from the Federal Staticitical System</h2>
+                </div>
+                <div class='grid-centered'>
+                    <p>Search for a keyword</p>
+                    <form>
+                        <label for="searchInput" class="show-for-sr">Search Box</label>
+                        <input type="search" value id='q' name='q' />
+                        <button id="search-submit" type="submit" class="primary-button">
+                            <i class="fas fa-search"></i>Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class='hero primary-color--200'>
+            <div class="grid-row text-center white-font">
+                <h2 class="grid-md-1">What is ResearchDataGov?</h2>
+                <p>ResearchDataGov is a web portal for discovering and requesting access to restricted microdata from federal statistical agencies. RDG advances the evidence-building capabilities of the Federal government, which was a key goal of the Foundations for Evidence-Based Policymaking Act of 2018.</p>
+            </div>
+            <div class="grid-row text-center white-font">
+                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1">
+                    <h3>13</h3>
+                    <h3 class="regular">Agencies</h3>
+                </div>
+                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1">
+                    <h3>1000+</h3>
+                    <h3 class="regular">Studies</h3>
+                </div>
+                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1">
+                    <h3>500</h3>
+                    <h3 class="regular">Projects</h3>
+                </div>
+            </div>
+        </section>
+
         <section class='grid-row'>
             <div class='grid-md-1'>
                 <h2>Forms</h2>
@@ -301,6 +340,28 @@
                     </div>
                 </form>
             </div>
+            <div class="grid-md-1-2">
+                <section id="">
+                    <h4>Two buttons toggle with minimum width</h4>
+                    <div class="switch-group">
+                        <input type="radio" id="radio-one" name='toggle' value='yes' checked />
+                        <label for="radio-one" class="search-toggle">Agencies</label>
+                        <input type="radio" id="radio-two" name='toggle' value='no' />
+                        <label for="radio-two" class="search-toggle">Topic</label>
+                    </div>
+                    <h4>Three buttons toggle</h4>
+                    <form>
+                        <div class="switch-group">
+                            <input type="radio" id="radio-three" name='switch-two' value='yes' checked />
+                            <label for="radio-three">Yes</label>
+                            <input type="radio" id="radio-four" name='switch-two' value='maybe' />
+                            <label for="radio-four">Maybe</label>
+                            <input type="radio" id="radio-five" name='switch-two' value='no' />
+                            <label for="radio-five">No</label>
+                        </div>
+                    </form>
+                </section>
+            </div>
             <div class='grid-md-1'></div>
         </section>
 
@@ -329,10 +390,18 @@
                 </form>
             </div>
             <div class='grid-md-1-2'>
-                <h4>Full-stretched Search bar</h4>
+                <h4>Full-stretched Search Bar</h4>
                 <form>
                     <label for="searchInput" class="show-for-sr">Search Box</label>
                     <input type='search' class="full-width">
+                    <button type="submit" class="primary-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="grid-centered">
+                <h4>Centered Search Bar</h4>
+                <form>
+                    <label for="searchInput" class="show-for-sr">Search Box</label>
+                    <input type='search'>
                     <button type="submit" class="primary-button"><i class="fas fa-search"></i></button>
                 </form>
             </div>
