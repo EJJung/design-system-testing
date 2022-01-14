@@ -30,7 +30,9 @@
                 <nav>
                     <div class="grid-row desktop-only">
                         <div class="grid-md-1-2">
-                            <a href="#" class='logo'><span class="show-for-sr">RDG logo</span></a>
+                            <a href="#" class='logo'><span class="show-for-sr">RDG logo</span>
+                                <img alt="ResearchDataGov-main-logo">
+                            </a>
                         </div>
                         <div class="grid-md-1-2 nav-tile">
                             <a href="#"><span aria-hidden="true"></span>
@@ -45,7 +47,9 @@
                         </div>
                     </div>
                     <div class="mobile-only">
-                        <a href="#" class='logo-small'><span class="show-for-sr">RDG logo</span></a>
+                        <a href="#" class='logo-small'><span class="show-for-sr">RDG logo</span>
+                            <img alt="ResearchDataGov-main-small-logo">
+                        </a>
                         <ul>
                             <input type="checkbox" id="checkbox-toggle" />
                             <label for="checkbox-toggle" class='menu-icon'>
@@ -72,19 +76,18 @@
                         <h2>Find and Apply to use restricted data from the Federal Staticitical System</h2>
                     </div>
                 </div>
-                <div class='grid-md-1'>
+                <div class='grid-md-1 grid-sm-1'>
                     <div class="grid-md-1-3">
                         <p>Search for a keyword</p>
                         <form>
-                            <label for="searchInput" class="show-for-sr">Search Box</label>
-                            <input type="search" value id='q' name='q' class="full-width" />
-                            <button id="search-submit" type="submit" class="primary-button">
+                            <input type="search" value id='q' name='q' class="full-width" title="Enter search term" />
+                            <button id="search-submit" type="submit" class="primary-button min-width">
                                 <i class="fas fa-search"></i>
                             </button>
                         </form>
                     </div>
                 </div>
-                <div class="grid-md-1">
+                <div class="grid-md-1 grid-sm-1">
                     <p>Or search by catergory</p>
                     <div class="switch-group">
                         <input type="radio" id="radio-one" name='toggle' value='yes' checked />
@@ -96,7 +99,7 @@
             </div>
         </section>
 
-        <section class="grid-row">
+        <section class="grid-row negative-margin-top">
             <div class="grid-md-1-3 grid-sm-1 category-list">
                 <a href="#">Agriculture and Food &#8594;</a>
                 <a href="#">Animals &#8594;</a>
@@ -135,24 +138,24 @@
                 <a href="#">Transportation and Public works &#8594;</a>
                 <a href="#">Water Resources Development &#8594;</a>
             </div>
-            <div class="grid-1 margin-top-small margin-bottom"></div>
+            <div class="grid-1 margin-top-small margin-bottom display-none-mobile"></div>
         </section>
 
         <section class='hero primary-color--200'>
             <div class="grid-row text-center white-font">
-                <h2 class="grid-md-1">What is ResearchDataGov?</h2>
+                <h2 class="grid-md-1 display-none-desktop">What is ResearchDataGov?</h2>
                 <p>ResearchDataGov is a web portal for discovering and requesting access to restricted microdata from federal statistical agencies. RDG advances the evidence-building capabilities of the Federal government, which was a key goal of the Foundations for Evidence-Based Policymaking Act of 2018.</p>
             </div>
             <div class="grid-row text-center white-font">
-                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1">
+                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1-3">
                     <h3>13</h3>
                     <h3 class="regular">Agencies</h3>
                 </div>
-                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1">
+                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1-3">
                     <h3>1000+</h3>
                     <h3 class="regular">Studies</h3>
                 </div>
-                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1">
+                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1-3">
                     <h3>500</h3>
                     <h3 class="regular">Projects</h3>
                 </div>
@@ -160,37 +163,37 @@
         </section>
 
         <section class="grid-row">
-            <div class="grid-md-1-4 grid-sm-1-3 ">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/census.png" alt='consus-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/bea.png" alt='bea-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/bls.png" alt='bls-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/bjs.png" alt='bjs-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/dot.png" alt='dot-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/samhsa.png" alt='samhsa-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/ers.png" alt='ers-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/usda.png" alt='usda-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/nchs.png" alt='nchs-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/ncses.png" alt='ncses-logo' />
             </div>
-            <div class="grid-md-1-4 grid-sm-1-3">
+            <div class="grid-md-1-4 grid-sm-1-3 agency-logos">
                 <img src="img/agencies/ies.png" alt='ies-logo' />
             </div>
             <div class="grid-1 margin-top-small margin-bottom"></div>
@@ -200,7 +203,9 @@
     <footer>
         <section class='grid-row logos'>
             <div class="grid-sm-1 grid-md-1-2">
-                <a href="#" class='department-logo'></a>
+                <a href="#" class="department-logo">
+                    <img alt="ResearchDataGov-logo" />
+                </a>
             </div>
             <div class="grid-sm-1 grid-md-1-2">
                 <nav>
