@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 
-<body>
-    <header class='full-header'>
+<header class='full-header'>
         <section class='main-nav' id='sectionMainMenu'>
             <h1 class="show-for-sr">Main Navigation</h1>
             <div class="main-menu-nav">
@@ -30,7 +29,9 @@
                 <nav>
                     <div class="grid-row desktop-only">
                         <div class="grid-md-1-2">
-                            <a href="#" class='logo'><span class="show-for-sr">RDG logo</span></a>
+                            <a href="#" class='logo'><span class="show-for-sr">RDG logo</span>
+                                <img alt="ResearchDataGov-main-logo">
+                            </a>
                         </div>
                         <div class="grid-md-1-2 nav-tile">
                             <a href="#"><span aria-hidden="true"></span>
@@ -45,7 +46,9 @@
                         </div>
                     </div>
                     <div class="mobile-only">
-                        <a href="#" class='logo-small'><span class="show-for-sr">RDG logo</span></a>
+                        <a href="#" class='logo-small'><span class="show-for-sr">RDG logo</span>
+                            <img alt="ResearchDataGov-main-small-logo">
+                        </a>
                         <ul>
                             <input type="checkbox" id="checkbox-toggle" />
                             <label for="checkbox-toggle" class='menu-icon'>
@@ -63,59 +66,39 @@
             </div>
         </section>
     </header>
-    <main id='mainContent'>
-        
-        <section class="hero">
-            <div class="grid-row text-center">
-                <div class='grid-md-1'>
-                    <h2>Find and Apply to use restricted data from the Federal Staticitical System</h2>
-                </div>
-                <div class='grid-centered'>
-                    <p>Search for a keyword</p>
-                    <form>
-                        <label for="searchInput" class="show-for-sr">Search Box</label>
-                        <input type="search" value id='q' name='q' />
-                        <button id="search-submit" type="submit" class="primary-button">
-                            <i class="fas fa-search"></i>Search
-                        </button>
-                    </form>
-                    <p>Or search by catergory</p>
-                    <div class="switch-group">
-                        <input type="radio" id="radio-one" name='toggle' value='yes' checked />
-                        <label for="radio-one" class="search-toggle">Agencies</label>
-                        <input type="radio" id="radio-two" name='toggle' value='no' />
-                        <label for="radio-two" class="search-toggle">Topic</label>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class='hero primary-color--200'>
-            <div class="grid-row text-center white-font">
-                <h2 class="grid-md-1">What is ResearchDataGov?</h2>
-                <p>ResearchDataGov is a web portal for discovering and requesting access to restricted microdata from federal statistical agencies. RDG advances the evidence-building capabilities of the Federal government, which was a key goal of the Foundations for Evidence-Based Policymaking Act of 2018.</p>
+    <section class='neutral-background-color margin-top-large'>
+        <div class="grid-row banner">
+            <div class="grid-md-1-4 vertical-center-container">
+                <h1 class='vertical-center'>Search Results</h1>
             </div>
-            <div class="grid-row text-center white-font">
-                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1">
-                    <h3>13</h3>
-                    <h3 class="regular">Agencies</h3>
-                </div>
-                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1">
-                    <h3>1000+</h3>
-                    <h3 class="regular">Studies</h3>
-                </div>
-                <div class="grid-md-1-3 grid-lg-1-3 grid-sm-1">
-                    <h3>500</h3>
-                    <h3 class="regular">Projects</h3>
-                </div>
+            <div class="grid-5-12">
+                <form>
+                    <label for="searchInput" class="show-for-sr">Search Box</label>
+                    <input type="search" value id='q' name='q' class='full-width'>
+                    <button class="primary-button" id='search-submit' type='submit'>
+                        <span class='fas fa-search'></span>
+                    </button>
+                </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section class='grid-row padding-top'>
+        <div class='grid-md-1-4'>
+            section for filter area
+        </div>
+        <main id='mainContent' class="grid-md-3-4">
+            Displaying Search Results 
+        </main>
+    </section>
 
     <footer>
         <section class='grid-row logos'>
             <div class="grid-sm-1 grid-md-1-2">
-                <a href="#" class='department-logo'></a>
+                <a href="#" class="department-logo">
+                    <img alt="ResearchDataGov-logo" />
+                </a>
             </div>
             <div class="grid-sm-1 grid-md-1-2">
                 <nav>
