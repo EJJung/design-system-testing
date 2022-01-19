@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 
-<header class='full-header'>
+<body>
+    <header class='full-header'>
         <section class='main-nav' id='sectionMainMenu'>
             <h1 class="show-for-sr">Main Navigation</h1>
             <div class="main-menu-nav">
@@ -86,10 +87,203 @@
 
     <section class='grid-row padding-top'>
         <div class='grid-md-1-4'>
-            section for filter area
+            <div class="vertical-center-container flex-between margin-bottom-small">
+                <h4>Filters</h4>
+                <a href="#">Clear all</a>
+            </div>
+            <div class="accordion">
+                <div>
+                    <a  role="button" data-bs-toggle="collapse" 
+                        href="#divFilter1" aria-expanded="false" 
+                        aria-controls="divFilter1" class="collapse-handler"
+                    >
+                        Category 1
+                        <span class="fas fa-chevron-arrow"></span>
+                    </a>
+                    <div class="filter collapse" id="divFilter1">
+                        <div>
+                            Sub-category 1
+                            <input type="checkbox" class="read-more-state" id="list-1" />
+                            <ul>
+                                <li>
+                                    <label for="check-one">Option 1</label>
+                                    <input type="checkbox" id="check-one" name='check-one' value='option1' />
+                                </li>
+                                <li>
+                                    <label for="check-two">Option 2</label>
+                                    <input type="checkbox" id="check-two" name='check-two' value='option2' />
+                                </li>
+                                <li>
+                                    <label for="check-three">Option 3</label>
+                                    <input type="checkbox" id="check-three" name='check-three' value='option3' />
+                                </li>
+                                <li>
+                                    <label for="check-four">Option 4</label>
+                                    <input type="checkbox" id="check-four" name='check-four' value='option4' />
+                                </li>
+                                <li>
+                                    <label for="check-five">Option 5</label>
+                                    <input type="checkbox" id="check-five" name='check-five' value='option5' />
+                                </li>
+                                <li>
+                                    <label for="check-six">Option 6</label>
+                                    <input type="checkbox" id="check-six" name='check-six' value='option6' />
+                                </li>
+                                <li>
+                                    <label for="check-seven">Option 7</label>
+                                    <input type="checkbox" id="check-seven" name='check-seven' value='option7' />
+                                </li>
+                            </ul>
+                            <label for='list-1' class='read-more-trigger'></label>
+                        </div>
+                        <div>
+                            Sub-category 2
+                            <ul>
+                                <li>
+                                    <label for="check-one">Option 1</label>
+                                    <input type="checkbox" id="check-one" name='check-one' value='option1' />
+                                </li>
+                                <li>
+                                    <label for="check-two">Option 2</label>
+                                    <input type="checkbox" id="check-two" name='check-two' value='option2' />
+                                </li>
+                                <li>
+                                    <label for="check-three">Option 3</label>
+                                    <input type="checkbox" id="check-three" name='check-three' value='option3' />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a  role="button" data-bs-toggle="collapse" 
+                        href="#divFilter2" aria-expanded="false" 
+                        aria-controls="divFilter2" class="collapse-handler"
+                    >
+                        Category 2
+                        <span class="fas fa-chevron-arrow"></span>
+                    </a>
+                    <div class="filter collapse" id="divFilter2">
+                        <div>
+                            Sub-category 1
+                            <input type="checkbox" class="read-more-state" id="list-2" />
+                            <ul>
+                                <li>
+                                    <label for="check-one">Option 1</label>
+                                    <input type="checkbox" id="check-one" name='check-one' value='option1' />
+                                </li>
+                                <li>
+                                    <label for="check-two">Option 2</label>
+                                    <input type="checkbox" id="check-two" name='check-two' value='option2' />
+                                </li>
+                                <li>
+                                    <label for="check-three">Option 3</label>
+                                    <input type="checkbox" id="check-three" name='check-three' value='option3' />
+                                </li>
+                                <li>
+                                    <label for="check-four">Option 4</label>
+                                    <input type="checkbox" id="check-four" name='check-four' value='option4' />
+                                </li>
+                                <li>
+                                    <label for="check-five">Option 5</label>
+                                    <input type="checkbox" id="check-five" name='check-five' value='option5' />
+                                </li>
+                                <li>
+                                    <label for="check-six">Option 6</label>
+                                    <input type="checkbox" id="check-six" name='check-six' value='option6' />
+                                </li>
+                                <li>
+                                    <label for="check-seven">Option 7</label>
+                                    <input type="checkbox" id="check-seven" name='check-seven' value='option7' />
+                                </li>
+                            </ul>
+                            <label for='list-2' class='read-more-trigger'></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <main id='mainContent' class="grid-md-3-4">
-            Displaying Search Results 
+        <div class="grid-md-1-12"></div>
+        <main id='mainContent' class="grid-md-2-3">
+            <div>
+                Filters applied:
+                <span class='badge'>Label 1</span>
+                <span class='badge'>Label 2</span>
+            </div>
+            <div>
+                Showing 1-10 of 480 results
+            </div>
+            <div>
+                <div>
+                    Results per page:
+                    <form>
+                        <label for='selectOption' class="show-for-sr">Select Example</label>
+                        <select>
+                            <option value="sample-option-1">Option 1</option>
+                            <option value="sample-option-2">Option 2</option>
+                            <option value="sample-option-3">Option 3</option>
+                            <option value="sample-option-4">Option 4</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    Sort by:
+                    <form>
+                        <label for='selectOption' class="show-for-sr">Select Example</label>
+                        <select>
+                            <option value="sample-option-1">Option 1</option>
+                            <option value="sample-option-2">Option 2</option>
+                            <option value="sample-option-3">Option 3</option>
+                            <option value="sample-option-4">Option 4</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <table class="vol-labels" width="100%">
+                <thead>
+                    <tr>
+                        <th>
+                            Title
+                        </th>
+                        <th>
+                            Data Published
+                        </th>
+                    </tr>
+                </thead>
+                <tr>
+                  <td class="label-color-1">
+                    <span class="fa fa-fw fa-square fa-margin-right Label_1" aria-hidden="true"></span>Label 1
+                  </td>
+                  <td>
+                    <a href="" class="asideEditLabel_open"><span class="fa fa-pencil fa-margin-right" aria-hidden="true"></span>Edit</a>
+                  </td>
+                  <td>
+                    <a href="" class="asideManageLabels_close asideDeleteLabel_open error-font-color"><span class="fa fa-trash fa-margin-right" aria-hidden="true"></span>Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-color-2">
+                    <span class="fa fa-fw fa-square fa-margin-right Label_1" aria-hidden="true"></span>Label 2
+                  </td>
+                  <td>
+                    <a href="" class="asideEditLabel_open"><span class="fa fa-pencil fa-margin-right" aria-hidden="true"></span>Edit</a>
+                  </td>
+                  <td>
+                    <a href="" class="error-font-color asideManageLabels_close asideDeleteLabel_open"><span class="fa fa-trash fa-margin-right" aria-hidden="true"></span>Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label-color-3">
+                    <span class="fa fa-fw fa-square fa-margin-right Label_1" aria-hidden="true"></span>Label 3
+                  </td>
+                  <td>
+                    <a href="" class="asideEditLabel_open"><span class="fa fa-pencil fa-margin-right" aria-hidden="true"></span>Edit</a>
+                  </td>
+                  <td>
+                    <a href="" class="error-font-color asideManageLabels_close asideDeleteLabel_open"><span class="fa fa-trash fa-margin-right" aria-hidden="true"></span>Delete</a>
+                  </td>
+                </tr>
+              </table>
         </main>
     </section>
 
