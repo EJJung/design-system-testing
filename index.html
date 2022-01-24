@@ -11,74 +11,74 @@
 </head>
 
 <body>
-    <header class='full-header'>
-        <section class='main-nav' id='sectionMainMenu'>
-            <h1 class="show-for-sr">Main Navigation</h1>
-            <div class="main-menu-nav">
-                <section class="global-nav desktop-only">
-                    <div class='grid-row'>
-                        <div class="grid-sm-1">
-                            <h1 class="show-for-sr">Static page navigation</h1>
-                            <nav>
-                                <a href="#" class="button button-size-small small-primary-button">About</a> 
-                                <a href="#" class="button button-size-small small-primary-button">Help</a> 
-                                <a href="#" class="button button-size-small small-primary-button">Contact</a>
-                            </nav>
-                        </div>
-                    </div>
-                </section>
-                <nav>
-                    <div class="grid-row desktop-only">
-                        <div class="grid-md-1-2">
-                            <a href="#" class='logo'><span class="show-for-sr">RDG logo</span></a>
-                        </div>
-                        <div class="grid-md-1-2 nav-tile">
-                            <a href="#"><span aria-hidden="true"></span>
-                                Reviewer Home
-                            </a>
-                            <a href="#"><span aria-hidden="true"></span>
-                                Ingest Home
-                            </a>
-                            <a href="#"><span aria-hidden="true"></span>
-                                Log Out
-                            </a>
-                        </div>
-                    </div>
-                    <div class="mobile-only">
-                        <a href="#" class='logo-small'><span class="show-for-sr">RDG logo</span></a>
-                        <ul>
-                            <input type="checkbox" id="checkbox-toggle" />
-                            <label for="checkbox-toggle" class='menu-icon'>
-                                <span class='nav-icon'></span>
-                            </label>
-                            <div class="mobile-menu">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Help</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">My Account</a></li>
-                            </div>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+  <header class='full-header'>
+    <section class='main-nav' id='sectionMainMenu'>
+      <h1 class="show-for-sr">Main Navigation</h1>
+      <div class="main-menu-nav">
+        <section class="global-nav desktop-only">
+          <h1 class="show-for-sr">Static page navigation</h1>
+          <nav>
+            <a href="#" class="button button-size-small small-primary-button">About</a> 
+            <a href="#" class="button button-size-small small-primary-button">Help</a> 
+            <a href="#" class="button button-size-small small-primary-button">Contact</a>
+          </nav>
         </section>
-    </header>
-    <main id='mainContent'>
-        <section class="grid-row">
-            <div class="grid-md-1"> </div>
-            <div class='grid-md-1-3'>
-                <a href="https://ejjung.github.io/design-system-testing/components/all.html">All Components</a>
+        <nav>
+          <div class="desktop-only">
+            <div class='nav-tile'>
+              <a href="/" class='logo'><span class="show-for-sr">RDG logo</span>
+                <img alt="ResearchDataGov-main-logo">
+              </a>
             </div>
-            <div class="grid-md-1-3">
-                <a href="https://ejjung.github.io/design-system-testing/home/landingPage.html">Landing Page</a>
+            <div class="nav-tile">
+              <a href="#"><span aria-hidden="true"></span>
+                Reviewer Home
+              </a>
+              <a href="#"><span aria-hidden="true"></span>
+                Ingest Home
+              </a>
+              <a href="#"><span aria-hidden="true"></span>
+                Log Out
+              </a>
             </div>
-            <div class="grid-md-1-3">
-                <a href="https://ejjung.github.io/design-system-testing/home/search.html">Search Page</a>
-            </div>
-        </section>
-    </main>
+          </div>
+          <div class="mobile-only">
+            <a href="#" class='logo-small'><span class="show-for-sr">RDG logo</span>
+              <img alt="ResearchDataGov-main-small-logo">
+            </a>
+            <ul>
+              <input type="checkbox" id="checkbox-toggle" />
+              <label for="checkbox-toggle" class='menu-icon'>
+                <span class='nav-icon'></span>
+              </label>
+              <div class="mobile-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My Account</a></li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <main id='mainContent'>
+    <section class="grid-row">
+      <div class="grid-md-1"> </div>
+      <div class='grid-md-1-3'>
+        <a href="./sampleHtml/sample.html">All Components</a>
+      </div>
+      <div class="grid-md-1-3">
+        <a href="./sampleHtml/landingpage-example.html">Landing Page</a>
+      </div>
+      <div class="grid-md-1-3">
+        <a href="./sampleHtml/searchResult.html">Search Page</a>
+      </div>
+    </section>
+  </main>
 
-    <footer>
+  <footer>
     <section class='grid-row logos'>
       <div class="grid-sm-1 grid-md-1-2">
         <a href="#" class="department-logo">
@@ -95,9 +95,8 @@
     </section>
   </footer>
 
-    <!-- These scripts are to connect Bootrap's js interactions. -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
